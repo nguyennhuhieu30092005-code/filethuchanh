@@ -3,21 +3,24 @@ using namespace std;
 
 int main()
 {
-    double temp, result,
+    double temp, result;
     char type;
 
+    cout << "vui long nhap so: " << endl;
     cin >> temp;
+    cout << "nhap nhiet do f or c: " << endl;
     cin >> type;
-    if (type == f){
-        result = (5.0 / 9.0)* (temp - 32.0)
+    
+    if (type == 'f'){
+        result = (5.0 / 9.0)* (temp - 32.0);
         cout << "day la fahren" << result << endl;
     }
-        else if(type == c) {
+        else if(type == 'c') {
             result = (9.0 / 5.0) * temp + 32.0;
             cout << "day la celsius" << result << endl;
         }
         else{
-            cout << "gia tri khong hop le:"; endl;
+            cout << "gia tri khong hop le:" << endl;
         }
         
 
